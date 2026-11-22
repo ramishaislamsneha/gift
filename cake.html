@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Make a Wish Sija!</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<section class="cake-page">
+
+<div class="cake-content">
+
+<h1>Make a Wish, Sija! 🎀</h1>
+
+<p class="cake-subtitle">
+This little cake is just for you ❤️
+</p>
+
+<div class="cake">
+
+<div class="candle">
+<div class="flame" id="flame"></div>
+</div>
+
+<div class="layer layer-top"></div>
+<div class="layer layer-middle"></div>
+<div class="layer layer-bottom"></div>
+
+</div>
+
+<h2 id="wishText">
+Close your eyes and make a wish! ✨
+</h2>
+
+<button class="wish-btn" onclick="makeWish()">
+Blow the Candles 🕯️
+</button>
+
+<div class="final-message" id="finalMessage">
+
+<h1>Happy Birthday Sija! ❤️</h1>
+
+<p>
+No matter where life takes us,
+you'll always be my little girl
+from Class 2 and my forever best friend.
+<br><br>
+Here's to many more birthdays together!
+<br><br>
+I am so lucky to have you in my life.
+</p>
+
+<h2>Forever & Always, Sneha 🎀</h2>
+
+<div class="hearts">💕 💗 💖 💕</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function makeWish() {
+
+document.getElementById("flame").style.display = "none";
+
+document.getElementById("wishText").innerHTML =
+"Your wish is on its way! ✨";
+
+document.querySelector(".wish-btn").style.display = "none";
+
+document.getElementById("finalMessage").style.display = "block";
+
+}
+
+</script>
+
+</body>
+</html>
